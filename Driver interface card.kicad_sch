@@ -1,0 +1,599 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "7ed3d1e9-4552-411d-9389-e37d59ab3934")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 165.1 118.11) (xy 193.04 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "068a8a32-65a7-4f12-a193-783e01302116")
+	)
+	(bus
+		(pts
+			(xy 90.17 101.6) (xy 193.04 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54dc070b-558c-461a-b10c-cd827ec82030")
+	)
+	(bus
+		(pts
+			(xy 165.1 110.49) (xy 193.04 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c61f2be-33f4-4919-a9fb-29a60cc9bf00")
+	)
+	(bus
+		(pts
+			(xy 165.1 69.85) (xy 193.04 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60f55bfb-7ccc-4ad6-a85c-568101e2b97f")
+	)
+	(wire
+		(pts
+			(xy 165.1 115.57) (xy 193.04 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a63c16c-cb8e-456d-8f19-933e7756e732")
+	)
+	(wire
+		(pts
+			(xy 165.1 74.93) (xy 193.04 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c6f0109-e8b8-4ce6-aa95-0b5da2d9e39b")
+	)
+	(bus
+		(pts
+			(xy 91.44 60.96) (xy 193.04 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa777f07-5c6a-4301-83bd-181bf5d8080b")
+	)
+	(bus
+		(pts
+			(xy 90.17 110.49) (xy 119.38 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd4bd1fe-eeb8-4263-a9aa-531e0e67dd98")
+	)
+	(wire
+		(pts
+			(xy 165.1 77.47) (xy 193.04 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf026bde-b5d6-4280-82a0-cd29281795f4")
+	)
+	(bus
+		(pts
+			(xy 91.44 69.85) (xy 119.38 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db8e159f-52d4-4949-8bcb-d9401e01e6a8")
+	)
+	(sheet
+		(at 119.38 64.77)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "067727a7-c9cc-44d5-8ceb-e7e0b895860e")
+		(property "Sheetname" "Logic converter"
+			(at 119.38 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 119.38 83.1346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LimitIN{Home, End}" input
+			(at 119.38 69.85 180)
+			(uuid "f5c09d87-10ae-4978-97f3-11146d8a6581")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LimitOUT{Home, End}" output
+			(at 165.1 69.85 0)
+			(uuid "8dc7d988-3c4f-4de0-a3da-d3b9d88d37ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EndExtPullup" input
+			(at 165.1 74.93 0)
+			(uuid "07654240-e905-4114-8d9a-39d4530ea9d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HomeExtPullup" input
+			(at 165.1 77.47 0)
+			(uuid "0aaf4dbe-7722-4848-bf15-b8175375087f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 193.04 55.88)
+		(size 33.02 72.39)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0efb2f8e-7c0e-4bb9-b6f8-b73acd6d85d7")
+		(property "Sheetname" "Driver connector"
+			(at 193.04 55.1684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "driverconn.kicad_sch"
+			(at 193.04 128.8546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Phase1{A+ A- B+ B-}" output
+			(at 193.04 60.96 180)
+			(uuid "133c945e-3016-4415-92b3-49117775c6b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LimitOUT1{Home, End}" input
+			(at 193.04 69.85 180)
+			(uuid "cad6ae7b-acd9-4137-98da-0cc72a02dc79")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Phase2{A+ A- B+ B-}" output
+			(at 193.04 101.6 180)
+			(uuid "4f4d6373-a628-4b3c-a6a2-d6aaace7b282")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LimitOUT2{Home, End}" input
+			(at 193.04 110.49 180)
+			(uuid "2eefa383-ab5b-43a3-9a1c-1c6e71551073")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "End1Pullup" input
+			(at 193.04 74.93 180)
+			(uuid "119469c7-cb0d-47ab-99d0-4633261eb2b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "End2Pullup" input
+			(at 193.04 115.57 180)
+			(uuid "007924d0-c50b-451a-a4d5-22218001df9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Home1Pullup" input
+			(at 193.04 77.47 180)
+			(uuid "c53e5363-5f48-41ee-afde-7e1344dc5d8b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Home2Pullup" input
+			(at 193.04 118.11 180)
+			(uuid "f27ca5c6-8909-4cb4-ae2e-7b6468b55072")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 119.38 22.86)
+		(size 45.72 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "296ca9ed-269d-4cf8-a6c4-0ae9abc2fee3")
+		(property "Sheetname" "Power supply"
+			(at 119.38 22.1484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "psu.kicad_sch"
+			(at 119.38 57.7346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 119.38 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 119.38 105.41)
+		(size 45.72 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5ac212ed-9869-4833-99f2-b807921800ea")
+		(property "Sheetname" "Logic converter1"
+			(at 119.38 104.6984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 119.38 123.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LimitIN{Home, End}" input
+			(at 119.38 110.49 180)
+			(uuid "d161410d-ae65-4560-8595-4bbcf5190c13")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LimitOUT{Home, End}" output
+			(at 165.1 110.49 0)
+			(uuid "91007320-3ebe-4eb1-8814-acf32792a734")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EndExtPullup" input
+			(at 165.1 115.57 0)
+			(uuid "cae23042-ea06-4d0d-8c63-156a4648444a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HomeExtPullup" input
+			(at 165.1 118.11 0)
+			(uuid "7cb46ea8-8610-4cc4-be08-29a39e2c21b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 57.15 93.98)
+		(size 33.02 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c8475d82-27e4-42e7-afd6-4512520a0763")
+		(property "Sheetname" "Motor Connector1"
+			(at 57.15 93.2684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motorconn.kicad_sch"
+			(at 57.15 113.6146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LimitIN{Home, End}" output
+			(at 90.17 110.49 0)
+			(uuid "3c0b8642-5c0c-4ac8-b48d-489a874597e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Phase{A+ A- B+ B-}" input
+			(at 90.17 101.6 0)
+			(uuid "0bbdc296-52df-4bd3-bf0b-7d39f3683e0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 58.42 53.34)
+		(size 33.02 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d47641fa-c2c7-4abc-a101-85f21ee2d56f")
+		(property "Sheetname" "Motor Connector"
+			(at 58.42 52.6284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motorconn.kicad_sch"
+			(at 58.42 72.9746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LimitIN{Home, End}" output
+			(at 91.44 69.85 0)
+			(uuid "0fb2e0e0-77a9-4a98-9d65-460690718765")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Phase{A+ A- B+ B-}" input
+			(at 91.44 60.96 0)
+			(uuid "8ae06202-3be6-4f84-aee7-13b35886b0e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

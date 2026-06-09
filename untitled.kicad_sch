@@ -501,12 +501,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SMAJ26CA"
+		(symbol "Diode:PTVS26VZ1USK"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -524,7 +523,7 @@
 					)
 				)
 			)
-			(property "Value" "SMAJ26CA"
+			(property "Value" "PTVS26VZ1USK"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -534,8 +533,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SMA"
-				(at 0 -5.08 0)
+			(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -545,7 +544,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS26VZ1USK.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -556,7 +555,7 @@
 					)
 				)
 			)
-			(property "Description" "400W bidirectional Transient Voltage Suppressor, 26.0Vr, SMA(DO-214AC)"
+			(property "Description" "26V, 1850W TVS unidirectional diode, DSN1608-2"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -567,7 +566,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "bidirectional diode TVS voltage suppressor"
+			(property "ki_keywords" "TVS diode"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -578,7 +577,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*SMA*"
+			(property "ki_fp_filters" "*DSN1608?2*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -589,25 +588,13 @@
 					)
 				)
 			)
-			(symbol "SMAJ26CA_0_1"
+			(symbol "PTVS26VZ1USK_0_1"
 				(polyline
 					(pts
-						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
 					)
 					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.2032)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -628,10 +615,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -639,11 +626,11 @@
 					)
 				)
 			)
-			(symbol "SMAJ26CA_1_1"
+			(symbol "PTVS26VZ1USK_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
-					(name "A1"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -661,7 +648,7 @@
 				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
-					(name "A2"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1450,16 +1437,22 @@
 		(uuid "0a05b85c-6f11-48b8-919a-028d70358f79")
 	)
 	(junction
-		(at 124.46 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ac75312-c1df-484c-a909-fcf793542095")
-	)
-	(junction
 		(at 132.08 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14838003-8d2d-4210-9777-47e023acefb4")
+	)
+	(junction
+		(at 125.73 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18b03bbb-5268-498e-ae03-810ccd55f93e")
+	)
+	(junction
+		(at 157.48 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b43c04b-05ee-40b0-9d36-7de565ca4f39")
 	)
 	(junction
 		(at 147.32 82.55)
@@ -1486,10 +1479,22 @@
 		(uuid "3c424b4d-b2c3-405f-a943-105388d66ada")
 	)
 	(junction
+		(at 167.64 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40258b88-1295-4259-a15c-0661186c8221")
+	)
+	(junction
 		(at 132.08 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "428ed441-c976-42b7-877b-11840e6621e7")
+	)
+	(junction
+		(at 166.37 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4600ef5e-b486-4d4b-82e2-483120d74f45")
 	)
 	(junction
 		(at 157.48 90.17)
@@ -1498,16 +1503,22 @@
 		(uuid "6306c561-2cc3-4ca9-8faa-8d75f9086328")
 	)
 	(junction
+		(at 157.48 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66ebbd5e-2f6c-4dbe-8f55-01acdaf9b9e9")
+	)
+	(junction
 		(at 95.25 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "68acb01b-fdfe-450f-9399-3a3bb86c8632")
 	)
 	(junction
-		(at 157.48 147.32)
+		(at 124.46 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7de2fdfa-0352-4510-bdee-0a4419a2560f")
+		(uuid "79543f6b-2349-4ac6-913c-e2353508db46")
 	)
 	(junction
 		(at 132.08 48.26)
@@ -1528,10 +1539,10 @@
 		(uuid "afb29bb3-198d-43d4-9342-7d51349a96e3")
 	)
 	(junction
-		(at 157.48 73.66)
+		(at 157.48 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bca1703b-5648-4c44-becb-8b3d16d2dc02")
+		(uuid "b4f5ae2e-7cc2-4805-aba7-4cb77f4c62e6")
 	)
 	(junction
 		(at 114.3 67.31)
@@ -1550,6 +1561,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9e3a654-d0e9-4143-b497-d43334622c42")
+	)
+	(junction
+		(at 157.48 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6adc7b6-7d55-48fa-83f6-65db7f8b16b9")
 	)
 	(junction
 		(at 157.48 163.83)
@@ -1586,12 +1603,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f28492cb-246e-4096-a60c-250395e0b22e")
-	)
-	(junction
-		(at 125.73 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb4c0906-1899-4ee0-a6bd-45476893e7b7")
 	)
 	(bus_entry
 		(at 208.28 116.84)
@@ -1711,6 +1722,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 82.55) (xy 132.08 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bae0d5e-ab2f-4225-a6cd-172f75d1c82a")
+	)
+	(wire
+		(pts
 			(xy 95.25 55.88) (xy 95.25 67.31)
 		)
 		(stroke
@@ -1731,7 +1752,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 87.63) (xy 157.48 90.17)
+			(xy 157.48 87.63) (xy 157.48 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1771,6 +1792,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 88.9) (xy 157.48 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2477fb22-bf57-43a4-82f9-ebfaa61d6e50")
+	)
+	(wire
+		(pts
 			(xy 87.63 40.64) (xy 95.25 40.64)
 		)
 		(stroke
@@ -1791,7 +1822,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 147.32) (xy 171.45 147.32)
+			(xy 157.48 147.32) (xy 167.64 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1848,6 +1879,16 @@
 			(type default)
 		)
 		(uuid "3dfc996f-f62f-42b5-aa97-0510cfc3c990")
+	)
+	(wire
+		(pts
+			(xy 166.37 73.66) (xy 189.23 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f15afd9-5b2a-4e7c-836d-af3a29598b72")
 	)
 	(wire
 		(pts
@@ -1931,23 +1972,13 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 156.21) (xy 132.08 156.21)
+			(xy 111.76 156.21) (xy 124.46 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4ea30015-3fc2-497a-a0bf-2db1d349ccf6")
-	)
-	(wire
-		(pts
-			(xy 125.73 82.55) (xy 132.08 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "505db688-42b2-40af-8fe2-8fe240b99d6c")
 	)
 	(wire
 		(pts
@@ -2071,6 +2102,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 156.21) (xy 132.08 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7af6b7ba-34fc-43cf-8d3f-2829457a2569")
+	)
+	(wire
+		(pts
 			(xy 88.9 114.3) (xy 96.52 114.3)
 		)
 		(stroke
@@ -2109,6 +2150,16 @@
 		)
 		(uuid "85fe2831-45a4-4ae3-baab-9ca8a0a7c535")
 	)
+	(wire
+		(pts
+			(xy 157.48 162.56) (xy 157.48 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8deb8887-ca02-4b9b-b24c-ec8080c8926f")
+	)
 	(bus
 		(pts
 			(xy 208.28 114.3) (xy 208.28 116.84)
@@ -2141,7 +2192,37 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 73.66) (xy 175.26 73.66)
+			(xy 166.37 73.66) (xy 166.37 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c5e137-49b2-4cb3-8cec-7538392ab2a5")
+	)
+	(wire
+		(pts
+			(xy 157.48 88.9) (xy 166.37 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9754b914-3e8b-4006-b6aa-33fc1b9936e8")
+	)
+	(wire
+		(pts
+			(xy 167.64 147.32) (xy 189.23 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ab349a-1f66-42c2-8904-d43b66ced1d0")
+	)
+	(wire
+		(pts
+			(xy 157.48 73.66) (xy 166.37 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2251,16 +2332,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 147.32) (xy 171.45 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cace33e0-3aa2-441f-bf4d-d0158b36b9ee")
-	)
-	(wire
-		(pts
 			(xy 115.57 106.68) (xy 115.57 109.22)
 		)
 		(stroke
@@ -2331,13 +2402,23 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 156.21) (xy 124.46 156.21)
+			(xy 157.48 162.56) (xy 167.64 162.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df6557e2-f871-41ef-94a1-ea60a4bfd43a")
+		(uuid "db6a66bd-fbc7-405b-88a9-586313e64471")
+	)
+	(wire
+		(pts
+			(xy 167.64 147.32) (xy 167.64 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcc138dc-cc15-4291-92da-9854534f425a")
 	)
 	(bus
 		(pts
@@ -2441,7 +2522,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 161.29) (xy 157.48 163.83)
+			(xy 157.48 161.29) (xy 157.48 162.56)
 		)
 		(stroke
 			(width 0)
@@ -2450,7 +2531,7 @@
 		(uuid "fd3d3729-5234-4668-8686-f2d9279b3244")
 	)
 	(label "LimitOUT.Home"
-		(at 175.26 73.66 180)
+		(at 189.23 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2490,7 +2571,7 @@
 		(uuid "2a58596b-1179-4404-925b-d650d38758ae")
 	)
 	(label "LimitOUT.End"
-		(at 171.45 147.32 180)
+		(at 189.23 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2585,7 +2666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06566b9b-87f4-4741-9748-809d0bfab0b1")
-		(property "Reference" "R5"
+		(property "Reference" "R2"
 			(at 102.87 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2647,11 +2728,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R5")
+					(reference "R2")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R8")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -2669,7 +2750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09d5255b-730a-4efb-8016-800f613c799d")
-		(property "Reference" "Q4"
+		(property "Reference" "Q2"
 			(at 119.38 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2682,6 +2763,7 @@
 		)
 		(property "Value" "2N7002H"
 			(at 119.38 115.5699 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2739,11 +2821,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "Q4")
+					(reference "Q2")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "Q5")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -2761,7 +2843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09f73a9c-0a9a-4a34-ad13-9ab383c284e9")
-		(property "Reference" "C1"
+		(property "Reference" "C4"
 			(at 151.13 158.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2825,97 +2907,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "C1")
+					(reference "C4")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SMAJ26CA")
-		(at 95.25 52.07 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ab0d647-650a-4004-9f07-ec37d16b5ed9")
-		(property "Reference" "D10"
-			(at 97.79 50.7999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMAJ26CA"
-			(at 97.79 53.3399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 100.33 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 95.25 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 26.0Vr, SMA(DO-214AC)"
-			(at 95.25 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "967b01b5-3d17-42da-96a6-2f909d872408")
-		)
-		(pin "1"
-			(uuid "b5d8b272-1543-41e5-a06a-5f5e2d67f95e")
-		)
-		(instances
-			(project "Driver interface card"
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "D10")
-					(unit 1)
-				)
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -2933,7 +2929,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17521ddb-be25-4df8-8427-55701ef288a4")
-		(property "Reference" "R1"
+		(property "Reference" "R5"
 			(at 118.11 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2997,11 +2993,98 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R1")
+					(reference "R5")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R13")
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PTVS26VZ1USK")
+		(at 96.52 127 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17678644-67c2-4dc6-a6a0-f2b32c36b642")
+		(property "Reference" "D2"
+			(at 99.06 125.7299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PTVS26VZ1USK"
+			(at 99.06 128.2699 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+			(at 92.075 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS26VZ1USK.pdf"
+			(at 96.52 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "26V, 1850W TVS unidirectional diode, DSN1608-2"
+			(at 96.52 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d8dd780-ff06-43f8-a7ef-bf970a410ddc")
+		)
+		(pin "2"
+			(uuid "f7160e92-b057-4b99-805a-2218cedf4f0b")
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
+					(reference "D2")
+					(unit 1)
+				)
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -3019,7 +3102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17777124-34a7-49ca-b00a-e646cdeb598a")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR013"
 			(at 157.48 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -3079,97 +3162,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR017")
+					(reference "#PWR013")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SMAJ26CA")
-		(at 125.73 86.36 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1aacab30-3bfc-4910-826d-e59dd43c51e1")
-		(property "Reference" "D5"
-			(at 128.27 85.0899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMAJ26CA"
-			(at 128.27 87.6299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 130.81 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 125.73 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 26.0Vr, SMA(DO-214AC)"
-			(at 125.73 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c5998242-9a97-4504-bcd0-bae09f1e04b3")
-		)
-		(pin "1"
-			(uuid "2f92291a-4372-4327-a1ac-d63664836da5")
-		)
-		(instances
-			(project "Driver interface card"
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "D5")
-					(unit 1)
-				)
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D9")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -3187,7 +3184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2662fa14-2d8f-4296-b527-4a7aebfa020e")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 161.29 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3200,6 +3197,7 @@
 		)
 		(property "Value" "2N7002H"
 			(at 161.29 83.8199 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3257,11 +3255,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "Q1")
+					(reference "Q3")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "Q8")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -3279,7 +3277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29ae5768-5688-4a55-a247-4298ba839438")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 118.11 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3292,6 +3290,7 @@
 		)
 		(property "Value" "2N7002H"
 			(at 118.11 41.9099 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3349,11 +3348,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "Q3")
+					(reference "Q1")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "Q6")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -3371,7 +3370,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36dc2834-1bd2-4f8c-a423-59243e74a7de")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR08"
 			(at 114.3 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3431,11 +3430,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR014")
+					(reference "#PWR08")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "#PWR023")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -3453,7 +3452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3aedbd5d-7abd-4256-8722-b39f8f4b48c5")
-		(property "Reference" "R21"
+		(property "Reference" "R10"
 			(at 149.86 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3464,7 +3463,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2k5"
+		(property "Value" "4k3"
 			(at 149.86 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3517,11 +3516,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R21")
+					(reference "R10")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -3539,7 +3538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b798a40-b706-4833-b0ac-765cf3194dd0")
-		(property "Reference" "R2"
+		(property "Reference" "R7"
 			(at 134.62 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3603,11 +3602,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R2")
+					(reference "R7")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R15")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -3625,7 +3624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40c5f2ef-b343-403f-a3fd-b10aa7acfaae")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR011"
 			(at 132.08 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -3685,11 +3684,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR03")
+					(reference "#PWR011")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "#PWR024")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3707,7 +3706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42575bea-bf53-4459-8404-179646c421c7")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR012"
 			(at 157.48 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3767,11 +3766,184 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR016")
+					(reference "#PWR012")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "#PWR028")
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PTVS26VZ1USK")
+		(at 167.64 158.75 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "446ee6c0-6608-4df6-9e72-a4008a6e5aad")
+		(property "Reference" "D10"
+			(at 170.18 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PTVS26VZ1USK"
+			(at 170.18 160.0199 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+			(at 163.195 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS26VZ1USK.pdf"
+			(at 167.64 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "26V, 1850W TVS unidirectional diode, DSN1608-2"
+			(at 167.64 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52fec258-5d3f-4409-aca3-08fd1221288f")
+		)
+		(pin "2"
+			(uuid "106828eb-e799-4771-8e35-59d4341bb5b9")
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
+					(reference "D10")
+					(unit 1)
+				)
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PTVS26VZ1USK")
+		(at 95.25 52.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a5d0154-c187-45e6-a940-546db9ea112b")
+		(property "Reference" "D1"
+			(at 97.79 50.7999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PTVS26VZ1USK"
+			(at 97.79 53.3399 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+			(at 90.805 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS26VZ1USK.pdf"
+			(at 95.25 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "26V, 1850W TVS unidirectional diode, DSN1608-2"
+			(at 95.25 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d891bef1-2bff-41d3-86c4-b7a9573ab957")
+		)
+		(pin "2"
+			(uuid "25583315-3264-454b-8476-f218808829f1")
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
+					(reference "D1")
+					(unit 1)
+				)
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -3789,7 +3961,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4de84af3-3fec-438e-bcf3-aa5ef9c1ee77")
-		(property "Reference" "R23"
+		(property "Reference" "R11"
 			(at 149.86 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3800,7 +3972,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2k5"
+		(property "Value" "4k3"
 			(at 149.86 147.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3853,7 +4025,7 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R23")
+					(reference "R11")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
@@ -3875,7 +4047,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60931a50-90af-4f2b-bab5-83207ccfc8d2")
-		(property "Reference" "D14"
+		(property "Reference" "D7"
 			(at 151.13 63.8174 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3950,11 +4122,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "D14")
+					(reference "D7")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D15")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -3972,7 +4144,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6412c085-2adb-40a5-a245-13563feb2c0a")
-		(property "Reference" "R6"
+		(property "Reference" "R3"
 			(at 104.14 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4034,11 +4206,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R6")
+					(reference "R3")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R7")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -4056,7 +4228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6587d966-b7de-4fb6-875c-e2d3a89a7fa4")
-		(property "Reference" "R10"
+		(property "Reference" "R6"
 			(at 134.62 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4120,11 +4292,98 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R10")
+					(reference "R6")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R16")
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PTVS26VZ1USK")
+		(at 166.37 85.09 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66ba88a8-2b15-4341-a7d7-9de299204655")
+		(property "Reference" "D9"
+			(at 168.91 83.8199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PTVS26VZ1USK"
+			(at 168.91 86.3599 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+			(at 161.925 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS26VZ1USK.pdf"
+			(at 166.37 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "26V, 1850W TVS unidirectional diode, DSN1608-2"
+			(at 166.37 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "321036ea-3d7d-4e79-80fd-d1057fded4de")
+		)
+		(pin "2"
+			(uuid "8cedbcc1-b2eb-450d-b7bc-fe2e7d3b71aa")
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
+					(reference "D9")
+					(unit 1)
+				)
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -4142,7 +4401,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71c156d2-c2b5-41f1-b8e4-6abe25aa6908")
-		(property "Reference" "D1"
+		(property "Reference" "D4"
 			(at 119.38 127.3174 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4217,11 +4476,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "D1")
+					(reference "D4")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D6")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -4239,7 +4498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73a3239f-9383-4e55-9221-e1954225432c")
-		(property "Reference" "D16"
+		(property "Reference" "D8"
 			(at 151.13 137.4774 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4314,11 +4573,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "D16")
+					(reference "D8")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D17")
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -4336,7 +4595,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73f6077d-4d3a-4705-a677-f42a0a4e77b7")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 139.7 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4398,11 +4657,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R17")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -4420,7 +4679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79e9582c-a675-42b1-990d-a3a882495149")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR015"
 			(at 157.48 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -4480,11 +4739,98 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR04")
+					(reference "#PWR015")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:PTVS26VZ1USK")
+		(at 125.73 86.36 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cdd27ef-1905-4389-acb7-6d79aca333de")
+		(property "Reference" "D6"
+			(at 128.27 85.0899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PTVS26VZ1USK"
+			(at 128.27 87.6299 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+			(at 121.285 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS26VZ1USK.pdf"
+			(at 125.73 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "26V, 1850W TVS unidirectional diode, DSN1608-2"
+			(at 125.73 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "456bc316-a306-4708-af4c-3cc23afb7bcb")
+		)
+		(pin "2"
+			(uuid "5bdeddd7-e4f0-4755-acbf-f1d7f0a33d4e")
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
+					(reference "D6")
+					(unit 1)
+				)
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -4583,6 +4929,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:PTVS26VZ1USK")
+		(at 124.46 160.02 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f83d919-109d-44cf-a535-ab991b93ec40")
+		(property "Reference" "D5"
+			(at 127 158.7499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PTVS26VZ1USK"
+			(at 127 161.2899 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:Nexperia_DSN1608-2_1.6x0.8mm"
+			(at 120.015 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PTVS26VZ1USK.pdf"
+			(at 124.46 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "26V, 1850W TVS unidirectional diode, DSN1608-2"
+			(at 124.46 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1fffdd2e-e50c-4c8b-a217-f8f043a3cee9")
+		)
+		(pin "2"
+			(uuid "f9810c34-ae06-4e99-95dc-bf957a714909")
+		)
+		(instances
+			(project "Driver interface card"
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
+					(reference "D5")
+					(unit 1)
+				)
+				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:2N7002H")
 		(at 154.94 156.21 0)
 		(unit 1)
@@ -4594,7 +5027,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8101c189-df30-4e07-a60d-42c7a1a423c0")
-		(property "Reference" "Q2"
+		(property "Reference" "Q4"
 			(at 161.29 154.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4607,6 +5040,7 @@
 		)
 		(property "Value" "2N7002H"
 			(at 161.29 157.4799 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4664,11 +5098,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "Q2")
+					(reference "Q4")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "Q7")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -4765,7 +5199,7 @@
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D7")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -4875,7 +5309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b11e95f7-e91b-4b3d-ad5e-550a76817890")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR014"
 			(at 157.48 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4935,97 +5369,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR02")
+					(reference "#PWR014")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SMAJ26CA")
-		(at 96.52 127 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9167b8b-23c4-465c-98ef-1189f0800101")
-		(property "Reference" "D12"
-			(at 99.06 125.7299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMAJ26CA"
-			(at 99.06 128.2699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 101.6 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 96.52 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 26.0Vr, SMA(DO-214AC)"
-			(at 96.52 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d1268233-cd88-4f9c-be3c-cc48b9ae7db5")
-		)
-		(pin "1"
-			(uuid "118dd465-a236-4a75-98eb-f640e221d43e")
-		)
-		(instances
-			(project "Driver interface card"
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "D12")
-					(unit 1)
-				)
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -5043,7 +5391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "baf454ad-0db0-4dc9-ae1d-89f8c25f1c83")
-		(property "Reference" "R9"
+		(property "Reference" "R4"
 			(at 116.84 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5107,11 +5455,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R9")
+					(reference "R4")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R14")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -5129,7 +5477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd0bcbfd-92b4-418f-8119-25285934904c")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR010"
 			(at 132.08 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -5189,11 +5537,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR015")
+					(reference "#PWR010")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "#PWR025")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5211,7 +5559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c989e47d-6df6-4c39-9bdc-eb0e117c2748")
-		(property "Reference" "R11"
+		(property "Reference" "R9"
 			(at 140.97 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5273,11 +5621,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R11")
+					(reference "R9")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R18")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -5363,7 +5711,7 @@
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R20")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -5381,7 +5729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e47ae748-9f81-429b-9d0e-de5804fb5279")
-		(property "Reference" "R4"
+		(property "Reference" "R13"
 			(at 160.02 139.6999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5445,11 +5793,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "R4")
+					(reference "R13")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "R19")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5467,7 +5815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eecc8723-26ef-4f3b-b9eb-a71a95cf8bfa")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR09"
 			(at 115.57 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -5527,97 +5875,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "#PWR01")
+					(reference "#PWR09")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SMAJ26CA")
-		(at 124.46 160.02 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f522bc44-f01f-4544-86e0-b96933cef865")
-		(property "Reference" "D4"
-			(at 127 158.7499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMAJ26CA"
-			(at 127 161.2899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 129.54 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 124.46 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 26.0Vr, SMA(DO-214AC)"
-			(at 124.46 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8ce8b738-d6f9-4888-adba-77b26e35f8ca")
-		)
-		(pin "1"
-			(uuid "6c5ad7a6-c5dd-42c1-aa18-ca67b64d3a66")
-		)
-		(instances
-			(project "Driver interface card"
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "D4")
-					(unit 1)
-				)
-				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "D8")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5635,7 +5897,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa3b47a9-e385-411f-a196-5f214767f88e")
-		(property "Reference" "C2"
+		(property "Reference" "C3"
 			(at 151.13 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5699,11 +5961,11 @@
 		(instances
 			(project "Driver interface card"
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/067727a7-c9cc-44d5-8ceb-e7e0b895860e"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 				(path "/7ed3d1e9-4552-411d-9389-e37d59ab3934/5ac212ed-9869-4833-99f2-b807921800ea"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
